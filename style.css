@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+}
+
+/* common class */
+.bg-color {
+    background-color: #1A0B2E;
+}
+
+.all-width {
+    width: 80%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 12px 16px;
+    border-radius: 22px;
+}
+
+/* navbar style */
+.nav-btn {
+    border: none;
+    background: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
+    color: #FFFF;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #ffffffa7;
+}
+
+.btn a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #FFFF;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* hero section style */
+.banner {
+    padding: 100px 0;
+    background: url(./assets/hero-bg.png);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-image {
+    width:350px;
+    height: 350px;
+    /* background: url(./assets/hero-circle.png); */
+    background-image: url(./assets/hero-circle.png);
+    background-size: cover;
+    background-position: center;
+}
+.banner-image img{
+   position: relative;
+   top:25%;
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.banner-title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    color: #FFFF;
+    margin-top: 40px;
+}
+
+.banner-description {
+    color: #FFFF;
+    margin-bottom: 20px;
+}
+
+.group-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.group-btn img {
+    width: 16px;
+}
+
+.banner-btn {
+    border: none;
+    background: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
+    color: #FFFF;
+}
+
+.banner-btn-2 {
+    border: 2px solid #00FF88;
+    font-weight: 600;
+    color: #00FF88;
+    background-color: transparent;
+}
+
+
+
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    .nav-container .menu,
+    .btn {
+        display: none;
+    }
+
+    .nav-container .logo img {
+        width: 150px;
+    }
+
+    .all-width {
+        width: 90%;
+
+    }
+
+    .hamburger-menu {
+        color: #FFFF;
+        display: block;
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .nav-container .menu,
+    .btn {
+        display: none;
+    }
+
+    .nav-container .logo img {
+        width: 137px;
+    }
+
+    .all-width {
+        width: 90%;
+
+    }
+
+    .hamburger-menu {
+        color: #FFFF;
+        display: block;
+    }
+}
