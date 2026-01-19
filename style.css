@@ -267,67 +267,78 @@
 }
 
 /* episode section */
-.episode-section{
+.episode-section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.episode-title{
+
+.episode-title {
     font-size: 3rem;
     font-weight: bold;
     color: #FFFF;
     margin: 100px 0 40px;
 }
-.episode-card-container{
+
+.episode-card-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-bottom: 50px;
 }
-.episode-card{
-    border-radius:25px;
+
+.episode-card {
+    border-radius: 25px;
     background-color: #250D44;
 }
-.episode-card iframe{
+
+.episode-card iframe {
     /* margin: 0;
     padding: 0; */
-    border-radius:25px 25px 0 0;
+    border-radius: 25px 25px 0 0;
     /* vertical-align: bottom; */
 }
-.episode-content{
+
+.episode-content {
     /* margin-top: 0; */
     padding: 20px;
 }
-.episode-content-title{
+
+.episode-content-title {
     font-size: 1.2rem;
     font-weight: bold;
     color: #ffff;
     margin-bottom: 12px;
 }
-.episode-content-description{
+
+.episode-content-description {
     line-height: 24px;
     color: #ffffff96;
     margin-bottom: 15px;
 }
-.time{
+
+.time {
     display: flex;
     align-items: center;
     gap: 10px;
     font-weight: 600;
     color: #00FF88;
 }
-.host-container{
+
+.host-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.host-title{
+
+.host-title {
     font-size: 3rem;
     font-weight: bold;
     color: #FFFF;
     margin: 40px 0;
 }
-.host-content{
+
+.host-content {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -336,24 +347,28 @@
     border-radius: 40px;
     margin-bottom: 100px;
 }
-.host-content-title{
+
+.host-content-title {
     font-size: 32px;
     font-weight: bold;
     color: #FFFF;
     margin-bottom: 20px;
 }
-.host-description{
+
+.host-description {
     line-height: 24px;
     color: #ffffff7d;
     margin-bottom: 20px;
 }
-.group-logo{
+
+.group-logo {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.logo{
-    padding:8px 9px;
+
+.logo-2 {
+    padding: 8px 9px;
     border: 1px solid #533C72;
     border-radius: 50%;
 }
@@ -461,10 +476,11 @@
     }
 
     /* techwave section */
-    .box-section-title{
+    .box-section-title {
         margin-top: 20px;
         font-size: 2rem;
     }
+
     .box-container {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -479,4 +495,24 @@
         /* margin-left:18px; */
     }
 
+    /* host section */
+    .episode-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+    .episode-title{
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+
+    .host-content {
+        flex-direction: column;
+        text-align:center;
+    }
+    .group-logo{
+        justify-content: center;
+    }
+    .host-title{
+        font-size: 2rem;
+    }
 }
