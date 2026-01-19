@@ -288,8 +288,16 @@
 }
 
 .episode-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 25px;
     background-color: #250D44;
+}
+.episode-vedio{
+    /* padding-top: 50px; */
+    /* width: 50%;
+    height: 50%; */
 }
 
 .episode-card iframe {
@@ -300,6 +308,8 @@
 }
 
 .episode-content {
+    /* width: 50%;
+    height: 50%; */
     /* margin-top: 0; */
     padding: 20px;
 }
@@ -373,6 +383,54 @@
     border-radius: 50%;
 }
 
+/* footer section style */
+.footer-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px;
+    /* margin-top: 50px; */
+    background: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10px;
+}
+
+.footer-title-logo img {
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    /* gap: 20px; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.spotify {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff70;
+    margin-bottom: 40px;
+}
+
+.copyright {
+    color: #ffffff85;
+}
 
 
 
@@ -500,19 +558,38 @@
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
     }
-    .episode-title{
+
+    .episode-title {
         font-size: 2rem;
         margin-top: 30px;
     }
 
     .host-content {
         flex-direction: column;
-        text-align:center;
+        text-align: center;
     }
-    .group-logo{
+
+    .group-logo {
         justify-content: center;
     }
-    .host-title{
+
+    .host-title {
         font-size: 2rem;
+    }
+
+    /* footer section style */
+    .footer-logo-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-section {
+        width: 100%;
+        margin: 0 auto;
+        padding: 100px;
+        /* margin-top: 50px; */
+        background: url(./assets/footer-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
     }
 }
