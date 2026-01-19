@@ -266,6 +266,97 @@
     line-height: 24px;
 }
 
+/* episode section */
+.episode-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.episode-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFF;
+    margin: 100px 0 40px;
+}
+.episode-card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.episode-card{
+    border-radius:25px;
+    background-color: #250D44;
+}
+.episode-card iframe{
+    /* margin: 0;
+    padding: 0; */
+    border-radius:25px 25px 0 0;
+    /* vertical-align: bottom; */
+}
+.episode-content{
+    /* margin-top: 0; */
+    padding: 20px;
+}
+.episode-content-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffff;
+    margin-bottom: 12px;
+}
+.episode-content-description{
+    line-height: 24px;
+    color: #ffffff96;
+    margin-bottom: 15px;
+}
+.time{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #00FF88;
+}
+.host-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.host-title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFFF;
+    margin: 40px 0;
+}
+.host-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #230E3D;
+    padding: 30px;
+    border-radius: 40px;
+    margin-bottom: 100px;
+}
+.host-content-title{
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFF;
+    margin-bottom: 20px;
+}
+.host-description{
+    line-height: 24px;
+    color: #ffffff7d;
+    margin-bottom: 20px;
+}
+.group-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo{
+    padding:8px 9px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+}
 
 
 
