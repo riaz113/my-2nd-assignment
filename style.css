@@ -288,34 +288,29 @@
 }
 
 .episode-card {
+    width: 320px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-between;
     border-radius: 25px;
     background-color: #250D44;
 }
-.episode-vedio{
-    /* padding-top: 50px; */
-    /* width: 50%;
-    height: 50%; */
-}
+
 
 .episode-card iframe {
-    /* margin: 0;
-    padding: 0; */
     border-radius: 25px 25px 0 0;
-    /* vertical-align: bottom; */
+    height:180px;
 }
 
 .episode-content {
-    /* width: 50%;
-    height: 50%; */
-    /* margin-top: 0; */
+    margin: 0;
+    padding: 0;
     padding: 20px;
 }
 
 .episode-content-title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #ffff;
     margin-bottom: 12px;
@@ -354,7 +349,7 @@
     gap: 20px;
     background-color: #230E3D;
     padding: 30px;
-    border-radius: 40px;
+    border-radius: 30px;
     margin-bottom: 100px;
 }
 
@@ -387,49 +382,50 @@
 .footer-section {
     width: 100%;
     margin: 0 auto;
-    padding: 100px;
-    /* margin-top: 50px; */
     background: url(./assets/footer-bg.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 1400px 290px;
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* margin-top: 50px; */
+    /* padding: 60px 0; */
 }
 
 .footer-logo-group {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 10px;
+    margin-top: 30px;
+    justify-items: center;
 }
 
 .footer-title-logo img {
+    margin-top: 60px;
     width: 350px;
-    margin-bottom: 20px;
 }
 
 .footer-logo {
     display: flex;
-    /* gap: 20px; */
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .spotify {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     color: #ffffff70;
     margin-bottom: 40px;
 }
 
 .copyright {
     color: #ffffff85;
+    margin-bottom: 60px;
 }
 
 
@@ -468,6 +464,28 @@
         width: 70px;
         position: relative;
         top: 36%;
+    }
+
+    .about-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        padding: 40px 0;
+    }
+
+    /* techwave section style */
+    .box-section-title {
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* host section style */
+    .episode-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
     }
 
 }
@@ -529,9 +547,10 @@
 
     .about-card-container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
-        padding: 40px 0;
+        gap: 30px;
+        padding: 30px 0;
     }
+
 
     /* techwave section */
     .box-section-title {
@@ -553,10 +572,19 @@
         /* margin-left:18px; */
     }
 
-    /* host section */
+    /* episode section */
     .episode-card-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
+    }
+
+    .episode-card iframe {
+        border-radius: 25px 25px 0 0;
+        
+    }
+
+    .episode-card {
+        width: 100%;
     }
 
     .episode-title {
@@ -567,6 +595,7 @@
     .host-content {
         flex-direction: column;
         text-align: center;
+        margin-bottom: 40px;
     }
 
     .group-logo {
@@ -578,18 +607,43 @@
     }
 
     /* footer section style */
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .footer-logo-group {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
+        justify-items: flex-start;
     }
 
     .footer-section {
-        width: 100%;
+        /* width: 100%;
+        height: 100%; */
         margin: 0 auto;
-        padding: 100px;
+        /* padding: 100px 0 0; */
         /* margin-top: 50px; */
         background: url(./assets/footer-bg.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-size:cover;
+        background-size: 800px 275px;
     }
+
+    .footer-title-logo img {
+        width: 260px;
+        margin-top: 50px;
+        margin-bottom: 10px !important;
+    }
+
+    .spotify {
+        font-size: .9rem;
+        margin-bottom: 20px;
+    }
+
+    .copyright {
+        margin-bottom: 40px;
+    }
+
 }
