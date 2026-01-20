@@ -25,6 +25,12 @@
     border-radius: 22px;
 }
 
+.btn:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom left, #F7E93F, #FB09B4, #9100F8);
+    box-shadow: 1px 3px 20px 7px green;
+}
+
 /* navbar style */
 .nav-btn {
     border: none;
@@ -104,11 +110,27 @@
 
 }
 
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 .banner-image img {
     position: relative;
     top: 80px;
     left: 45px;
+    animation: zoomInOut 2s ease-in-out infinite;
 }
+
 
 .banner-container {
     display: flex;
@@ -374,9 +396,18 @@
 }
 
 .logo-2 {
+    width: 35px;
+    height: 35px;
     padding: 8px 9px;
     border: 1px solid #533C72;
     border-radius: 50%;
+}
+
+.logo-2 img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* footer section style */
@@ -386,7 +417,7 @@
     background: url(./assets/footer-bg.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1400px 290px;
+    background-size: 1400px 100%;
 }
 
 .footer-container {
@@ -425,6 +456,12 @@
     margin-bottom: 60px;
 }
 
+.horizontal-3 {
+    border: 1px solid #ffffff23;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
 
 
 
@@ -461,7 +498,7 @@
     .banner-image img {
         width: 40px;
         position: relative;
-        left: 25px;
+        left: 22px;
         /* bottom: 100px; */
         top: 50px;
     }
@@ -561,9 +598,12 @@
 
     .footer-logo-group {
         grid-template-columns: repeat(2, auto);
-        gap: 0px 50px;
-        justify-content: center;
-        align-items: center;
+        gap: 0;
+        justify-items: flex-start;
+    }
+
+    .margin {
+        margin-left: 50px;
     }
 
     .footer-section {
@@ -581,7 +621,7 @@
 
     .spotify {
         font-size: .9rem;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .copyright {
@@ -631,7 +671,7 @@
         font-size: .8rem;
         position: relative;
         left: 70px;
-        bottom:70px;
+        bottom: 70px;
     }
 
     .about-card-container {
@@ -693,9 +733,12 @@
 
     .footer-logo-group {
         grid-template-columns: repeat(2, auto);
-        gap: 0px 50px;
-        justify-content: center;
-        align-items: center;
+        gap: 0;
+        justify-items: flex-start;
+    }
+
+    .margin {
+        margin-left: 50px;
     }
 
     .footer-section {
@@ -713,7 +756,7 @@
 
     .spotify {
         font-size: .9rem;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .copyright {
